@@ -1,0 +1,33 @@
+﻿Part One: SWAPI
+1. https://swapi.dev/api/people/4
+2. https://swapi.dev/api/planets/2
+3. https://swapi.dev/api/starships/10/
+4. https://swapi.dev/api/people/2/
+        https://swapi.dev/api/species/2/
+5. https://swapi.dev/api/films/1/
+        https://swapi.dev/api/films/2/
+        https://swapi.dev/api/films/3/
+        https://swapi.dev/api/films/4/
+        https://swapi.dev/api/films/5/
+        https://swapi.dev/api/films/6/
+6. https://swapi.dev/api/starships/?search=Millennium
+
+
+Part Two: Social Mountain
+1. POST request accepts a body and expects a text
+2. GET request returns an array of all posts
+3. https://practiceapi.devmountain.com/api/posts/555
+4. 200: description: Returns an array of filtered posts
+409: description: Request query is missing required text property
+5. https://practiceapi.devmountain.com/api/posts/
+        {
+                  "text": "Dallin Breen"
+}
+6. https://practiceapi.devmountain.com/api/posts/?id=518
+        {
+                  "text": "red"
+}
+7. https://practiceapi.devmountain.com/api/posts/filter/?text=blue
+8. application/json; charset=utf-8
+9. Not having query id or body text
+10.  It sends an array of all the posts. This is because there are no parameters that are required for the /post GET request
